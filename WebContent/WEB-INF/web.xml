@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>admin1</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <servlet-name>userServlet</servlet-name>
+    <servlet-class>com.cissst.servlet.UserServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>userServlet</servlet-name>
+    <url-pattern>/user</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>adminServlet</servlet-name>
+    <servlet-class>com.cissst.servlet.AdminServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>adminServlet</servlet-name>
+    <url-pattern>/admin</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>maintainServlet</servlet-name>
+    <servlet-class>com.cissst.servlet.MaintainServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>maintainServlet</servlet-name>
+    <url-pattern>/main</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+    <servlet-name>inspectionServlet</servlet-name>
+    <servlet-class>com.cissst.servlet.InspectionServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>inspectionServlet</servlet-name>
+    <url-pattern>/inspection</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+    <servlet-name>customServlet</servlet-name>
+    <servlet-class>com.cissst.servlet.CustomAccountServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>customServlet</servlet-name>
+    <url-pattern>/custom</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>NoticeServlet</servlet-name>
+    <servlet-class>com.cissst.servlet.NoticeServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>NoticeServlet</servlet-name>
+    <url-pattern>/notice</url-pattern>
+  </servlet-mapping>
+    <servlet>
+    <servlet-name>houseServlet</servlet-name>
+    <servlet-class>com.cissst.servlet.HouseServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>houseServlet</servlet-name>
+    <url-pattern>/house</url-pattern>
+  </servlet-mapping>
+</web-app>

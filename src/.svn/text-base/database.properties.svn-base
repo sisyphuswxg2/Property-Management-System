@@ -1,0 +1,4 @@
+username = liyang1
+password = liyang1
+url = jdbc\:oracle\:thin\:@192.168.2.67\:1521\:orcl
+driver = oracle.jdbc.driver.OracleDriver
